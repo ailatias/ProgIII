@@ -11,7 +11,11 @@ public class Disciplina {
         
         Scanner scan = new Scanner(System.in);
         
-        double n1, n2, n3, n4, media;
+        double n1, n2, n3, media;
+        String nome;
+        
+        System.out.println("Informe o nome da disciplina:");
+        nome = scan.nextLine();
         
         System.out.println("Digite a primeira nota:");
         n1 = scan.nextDouble();
@@ -22,7 +26,7 @@ public class Disciplina {
         
         media = (n1+n2+n3)/3;
         
-        System.out.println("Sua média nesta disciplina é: "+ media);
+        System.out.println("Sua média na disciplina "+ nome +" é: "+ media);
         
         if (media >= 7){
             System.out.println("Você está aprovado na disciplina!");
